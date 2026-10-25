@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ваш Мастер — ремонт обуви, часов и изготовление ключей в Астане</title>
+<meta name="description" content="Срочный ремонт обуви, часов, изготовление ключей и заточка инструментов в ТРЦ Керуен и Сарыарка, Астана. Ежедневно с 10:00 до 22:00.">
+<meta name="theme-color" content="#1E2022">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="top">
+  <div class="container header__in">
+    <a href="#top" class="logo" aria-label="Ваш Мастер — на главную">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><circle cx="11" cy="16" r="7" fill="none" stroke="#C53030" stroke-width="3"/><path d="M18 16h12M25 16v5M29 16v4" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round" fill="none"/></svg>
+      <span>Ваш Мастер</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#advantages">Преимущества</a>
+      <a href="#services">Услуги</a>
+      <a href="#contacts">Адреса и контакты</a>
+      <div class="branch-switch branch-switch--nav" role="group" aria-label="Выбор филиала">
+        <button type="button" data-branch="keruen" class="is-active">Керуен</button>
+        <button type="button" data-branch="saryarka">Сарыарка</button>
+      </div>
+    </nav>
+
+    <div class="header__actions">
+      <div class="branch-switch" role="group" aria-label="Выбор филиала">
+        <button type="button" data-branch="keruen" class="is-active">Керуен</button>
+        <button type="button" data-branch="saryarka">Сарыарка</button>
+      </div>
+      <a class="btn btn--red btn--sm" id="headerCall" href="tel:+77172795592">Позвонить</a>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero__in">
+      <div class="hero__text">
+        <h1>Срочный ремонт обуви, часов и изготовление ключей в ТРЦ Керуен и Сарыарка</h1>
+        <p class="hero__sub">Качественный бытовой сервис в Астане за 15 минут с гарантией</p>
+        <div class="hero__btns">
+          <a class="btn btn--steel" href="#contacts">Наши адреса</a>
+          <a class="btn btn--red" id="heroCall" href="tel:+77172795592">Быстрый звонок</a>
+        </div>
+      </div>
+
+      <aside class="status" aria-label="Работа филиалов сейчас">
+        <p class="status__title">Сейчас в Астане <span id="clock">--:--</span></p>
+        <div class="status__row">
+          <span class="dot" data-status></span>
+          <div><strong>ТРЦ «Керуен»</strong><small>ул. Достык, 9</small></div>
+          <span class="status__txt" data-status-text>10:00–22:00</span>
+        </div>
+        <div class="status__row">
+          <span class="dot" data-status></span>
+          <div><strong>ТРЦ «Сарыарка»</strong><small>пр. Туран, 24</small></div>
+          <span class="status__txt" data-status-text>10:00–22:00</span>
+        </div>
+        <p class="status__foot">Оба филиала работают ежедневно с 10:00 до 22:00</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="advantages">
+    <div class="container">
+      <h2>Почему выбирают «Ваш Мастер»</h2>
+      <div class="grid grid--4">
+        <article class="adv">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 8v5l3 2M9 2h6"/></svg>
+          <h3>Скорость</h3>
+          <p>Ключ готов от 5 минут. Большинство работ делаем, пока вы ждёте.</p>
+        </article>
+        <article class="adv">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5L16 9.5"/></svg>
+          <h3>Гарантия качества</h3>
+          <p>Отвечаем за результат каждой работы — от замены батарейки до реставрации кожи.</p>
+        </article>
+        <article class="adv">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <h3>Удобные локации</h3>
+          <p>Два филиала в топовых ТРЦ Астаны: «Керуен» и «Сарыарка». Заходите по пути.</p>
+        </article>
+        <article class="adv">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6.5a4 4 0 00-5.2 5.2L3 18l3 3 6.300-6.300a4 4 0 005.200-5.200l-2.500 2.500-2.500-.5-.5-2.500z"/></svg>
+          <h3>Опытные мастера</h3>
+          <p>Работаем с ключами, обувью, часами и инструментом каждый день — знаем свои материалы.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <h2>Услуги</h2>
+      <div class="grid grid--2">
+        <article class="card">
+          <div class="card__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="12" r="4.500"/><path d="M12.500 12H22M18 12v4M21 12v3"/></svg></div>
+          <h3>Изготовление ключей</h3>
+          <p>Ключи для квартир, домофонов, автомобилей, сейфов. Быстро — от 5 минут.</p>
+          <a class="card__link" href="#contacts">Где нас найти</a>
+        </article>
+        <article class="card">
+          <div class="card__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 15c3 0 4-3 4-8h5c0 3 2 4 5 5l4 2v4H3z"/><path d="M3 19h18"/></svg></div>
+          <h3>Ремонт обуви и кожгалантереи</h3>
+          <p>Замена набоек, молний, супинаторов, растяжка, реставрация кожи, ремонт сумок и ремней.</p>
+          <a class="card__link" href="#contacts">Где нас найти</a>
+        </article>
+        <article class="card">
+          <div class="card__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.500"/><path d="M12 9v3l2 1.500M9.500 3h5l.5 3.500h-6zM9.500 21h5l.5-3.500h-6z"/></svg></div>
+          <h3>Ремонт часов и замена батареек</h3>
+          <p>Профессиональная замена элементов питания в часах, пультах, автоключах. Подгонка и замена ремешков.</p>
+          <a class="card__link" href="#contacts">Где нас найти</a>
+        </article>
+        <article class="card">
+          <div class="card__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20L15 4c3 1 5 3 6 6L6 21zM8 15l3 3"/></svg></div>
+          <h3>Заточка инструментов</h3>
+          <p>Заточка бытовых и кухонных ножей, ножниц, маникюрного и садового инструмента.</p>
+          <a class="card__link" href="#contacts">Где нас найти</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacts">
+    <div class="container">
+      <h2>Адреса и контакты</h2>
+
+      <div class="tabs" role="tablist" aria-label="Выбор филиала">
+        <button type="button" role="tab" class="tab is-active" data-filter="all" aria-selected="true">Все филиалы</button>
+        <button type="button" role="tab" class="tab" data-filter="keruen" aria-selected="false">ТРЦ «Керуен»</button>
+        <button type="button" role="tab" class="tab" data-filter="saryarka" aria-selected="false">ТРЦ «Сарыарка»</button>
+      </div>
+
+      <div class="grid grid--2 branches">
+        <article class="branch branch--red" data-branch-card="keruen">
+          <h3>ТРЦ «Керуен»</h3>
+          <p class="branch__tag">Бытовые услуги / Экстренный сервис</p>
+          <dl>
+            <dt>Адрес</dt><dd>г. Астана, ул. Достык, 9</dd>
+            <dt>Телефон</dt><dd><a href="tel:+77172795592">+7 (7172) 79-55-92</a></dd>
+            <dt>Режим работы</dt><dd>Ежедневно с 10:00 до 22:00</dd>
+          </dl>
+          <div class="branch__btns">
+            <a class="btn btn--red" href="tel:+77172795592">Позвонить</a>
+            <a class="btn btn--steel" href="https://2gis.kz/astana/firm/70000001019252670" target="_blank" rel="noopener">Открыть на карте</a>
+          </div>
+        </article>
+
+        <article class="branch branch--steel" data-branch-card="saryarka">
+          <h3>ТРЦ «Сарыарка»</h3>
+          <p class="branch__tag">Граунд-этаж / Зона бытовых услуг</p>
+          <dl>
+            <dt>Адрес</dt><dd>г. Астана, проспект Туран, 24</dd>
+            <dt>Телефон ТРЦ / Справка</dt><dd><a href="tel:+77172515606">+7 (7172) 51-56-06</a></dd>
+            <dt>Режим работы</dt><dd>Ежедневно с 10:00 до 22:00</dd>
+          </dl>
+          <div class="branch__btns">
+            <a class="btn btn--red" href="tel:+77172515606">Позвонить</a>
+            <a class="btn btn--steel" href="https://2gis.kz/astana/firm/70000001019252683" target="_blank" rel="noopener">Открыть на карте</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__in">
+    <div>
+      <a href="#top" class="logo"><span>Ваш Мастер</span></a>
+      <p>Бытовые услуги в Астане</p>
+    </div>
+    <div class="footer__col">
+      <a href="https://vash-master.kz" target="_blank" rel="noopener">vash-master.kz</a>
+      <a href="tel:+77172795592">+7 (7172) 79-55-92 — ТРЦ «Керуен»</a>
+      <a href="tel:+77172515606">+7 (7172) 51-56-06 — ТРЦ «Сарыарка»</a>
+    </div>
+    <p class="footer__copy">© <span id="year">2026</span> «Ваш Мастер». Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
